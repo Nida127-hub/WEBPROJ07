@@ -10,7 +10,6 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
 
-// Authentication Pages
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -24,42 +23,43 @@ function App() {
       <Navbar />
 
 
-      <Routes>
+      <main className="main-content">
 
-        <Route path="/" element={<Home />} />
+        <Routes>
 
-        <Route path="/products" element={<Products />} />
+          <Route path="/" element={<Home />} />
 
-        <Route 
-          path="/product/:id" 
-          element={<ProductDetails />} 
-        />
+          <Route path="/products" element={<Products />} />
 
-        <Route path="/cart" element={<Cart />} />
+          <Route 
+            path="/product/:id" 
+            element={<ProductDetails />} 
+          />
 
-        <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/cart" element={<Cart />} />
 
-
-        {/* Authentication Routes */}
-
-        <Route 
-          path="/login" 
-          element={<Login />} 
-        />
-
-        <Route 
-          path="/register" 
-          element={<Register />} 
-        />
+          <Route path="/wishlist" element={<Wishlist />} />
 
 
-        <Route 
-          path="*" 
-          element={<NotFound />} 
-        />
+          <Route 
+            path="/login" 
+            element={<Login />} 
+          />
+
+          <Route 
+            path="/register" 
+            element={<Register />} 
+          />
 
 
-      </Routes>
+          <Route 
+            path="*" 
+            element={<NotFound />} 
+          />
+
+        </Routes>
+
+      </main>
 
 
       <Footer />

@@ -238,3 +238,36 @@ body.dark footer{
     }
 
 }
+
+html,
+body,
+#root{
+
+    min-height:100%;
+
+}
+
+
+body{
+
+    margin:0;
+
+}
+
+
+#root{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.main-content{
+
+    flex:1;
+
+}
