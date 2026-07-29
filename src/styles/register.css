@@ -1,72 +1,167 @@
-.auth-container {
+.auth-page{
 
-    width: 400px;
-    margin: 80px auto;
-    padding: 40px;
+    min-height:calc(100vh - 150px);
 
-    background: white;
-    border-radius: 20px;
+    display:flex;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    justify-content:center;
+
+    align-items:center;
 
 }
+
+
+
+/* Register Card */
+
+.auth-container {
+
+    width:400px;
+
+    padding:40px;
+
+    background:var(--card);
+
+    color:var(--heading);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
 
 
 .auth-container h1 {
 
-    text-align: center;
-    margin-bottom: 30px;
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:var(--heading);
 
 }
+
+
 
 
 
 .auth-container form {
 
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
 
 }
+
+
 
 
 
 .auth-container input {
 
-    padding: 14px;
+    padding:14px;
 
-    border-radius: 10px;
+    border-radius:10px;
 
-    border: 1px solid #ddd;
+    border:1px solid var(--border);
 
-    font-size: 15px;
+    background:var(--bg);
+
+    color:var(--heading);
+
+    font-size:15px;
 
 }
+
+
+
+
+
+.auth-container input::placeholder{
+
+    color:var(--text);
+
+    opacity:0.7;
+
+}
+
+
 
 
 
 .auth-container button {
 
-    padding: 14px;
+    padding:14px;
 
-    border: none;
+    border:none;
 
-    border-radius: 10px;
+    border-radius:10px;
 
-    background: #2563eb;
+    background:var(--primary);
 
-    color: white;
+    color:white;
 
-    font-size: 16px;
+    font-size:16px;
 
-    cursor: pointer;
+    cursor:pointer;
+
+    transition:0.3s;
 
 }
 
 
 
+
+
 .auth-container button:hover {
 
-    background: #1d4ed8;
+    background:#1d4ed8;
+
+}
+
+
+
+
+
+/* DARK MODE */
+
+body.dark .auth-container{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+
+
+body.dark .auth-container h1{
+
+    color:white;
+
+}
+
+
+
+body.dark .auth-container input{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #4b5563;
+
+}
+
+
+
+body.dark .auth-container input::placeholder{
+
+    color:#d1d5db;
 
 }
