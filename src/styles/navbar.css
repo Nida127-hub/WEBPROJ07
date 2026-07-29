@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:#1e293b;
+
+    color:white;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    transition:0.3s ease;
+
+}
+
+
+/* =====================
+   DARK MODE NAVBAR
+===================== */
+
+
+body.dark .navbar{
+
+    background:#020617 !important;
+
+    color:white;
+
+}
+
+
+
+
+.logo{
+
+    font-family:cursive;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+
+
+.logo span{
+
+    color:#38bdf8;
+
+}
+
+
+
+body.dark .logo span{
+
+    color:#60a5fa;
+
+}
+
+
+
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+
+
+.nav-links a{
+
+    font-family:'Times New Roman', Times, serif;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#38bdf8;
+
+}
+
+
+
+
+.cart-link{
+
+    position:relative;
+
+    font-size:22px;
+
+}
+
+
+
+.cart-count{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-12px;
+
+
+    width:20px;
+
+    height:20px;
+
+
+    border-radius:50%;
+
+
+    background:red;
+
+    color:white;
+
+
+    font-size:12px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+
+/* Theme Button */
+
+.theme-btn{
+
+    width:65px;
+    height:32px;
+
+    border-radius:30px;
+
+    border:none;
+
+    background:#cbd5e1;
+
+    cursor:pointer;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:5px 8px;
+
+    transition:0.3s ease;
+
+}
+
+
+
+
+/* Moon and Sun icons */
+
+.theme-btn svg{
+
+    font-size:15px;
+
+    color:white;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.sun{
+
+    opacity:0;
+
+}
+
+
+
+
+/* Moving circle */
+
+.toggle-circle{
+
+    position:absolute;
+
+    width:24px;
+
+    height:24px;
+
+    background:white;
+
+    border-radius:50%;
+
+    left:4px;
+
+    top:4px;
+
+    transition:0.3s ease;
+
+}
+
+
+
+
+
+/* DARK MODE ACTIVE */
+
+.theme-btn.active{
+
+    background:#2563eb;
+
+}
+
+
+
+
+
+.theme-btn.active .toggle-circle{
+
+    transform:translateX(33px);
+
+}
+
+
+
+
+
+.theme-btn.active .moon{
+
+    opacity:0;
+
+}
+
+
+
+
+
+.theme-btn.active .sun{
+
+    opacity:1;
+
+}
+
+
+
+
+
+.theme-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* Logout Button */
+
+
+.logout-btn{
+
+
+    background:#ef4444;
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:8px 16px;
+
+
+    border-radius:8px;
+
+
+    cursor:pointer;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+
+
+
+/* Welcome Text */
+
+
+.welcome-user{
+
+    color:white;
+
+    font-size:17px;
+
+}

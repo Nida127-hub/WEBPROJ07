@@ -1,0 +1,147 @@
+/* =====================================
+   GLOBAL THEME SYSTEM
+===================================== */
+
+:root {
+
+    /* Light Mode */
+    --bg-color: #ffffff;
+    --card-color: #ffffff;
+    --text-color: #374151;
+    --heading-color: #111827;
+    --border-color: #e5e7eb;
+
+    --primary-color: #2563eb;
+
+    --shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    --input-bg:#ffffff;
+
+}
+
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark {
+
+    --bg-color: #111827;
+    --card-color: #1f2937;
+
+    --text-color: #d1d5db;
+    --heading-color: #ffffff;
+
+    --border-color: #374151;
+
+    --primary-color:#60a5fa;
+
+    --shadow:
+    0 10px 25px rgba(0,0,0,0.4);
+
+    --input-bg:#374151;
+
+}
+
+
+/* =====================================
+   APPLY TO EVERYTHING
+===================================== */
+
+
+*{
+    transition:
+    background-color .3s ease,
+    color .3s ease,
+    border-color .3s ease;
+}
+
+
+
+body{
+
+    margin:0;
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+}
+
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6{
+
+    color:var(--heading-color);
+
+}
+
+
+/* All Cards */
+
+.card,
+.product-card,
+.todo-card,
+.notes-card,
+.dashboard-card,
+.container-box,
+.box,
+section{
+
+    background:var(--card-color);
+
+    color:var(--text-color);
+
+    border-color:var(--border-color);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* Text */
+
+p,
+span,
+label{
+
+    color:var(--text-color);
+
+}
+
+
+/* Inputs */
+
+input,
+textarea,
+select{
+
+    background:var(--input-bg);
+
+    color:var(--text-color);
+
+    border:1px solid var(--border-color);
+
+}
+
+
+/* Buttons */
+
+button{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+
+/* Links */
+
+a{
+
+    color:var(--primary-color);
+
+}

@@ -1,0 +1,198 @@
+.product-card{
+    position:relative;
+
+    background:var(--card);
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    text-align:center;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    margin:auto;
+}
+
+.product-card h3{
+    margin:20px 0;
+    font-size:18px;
+    height:60px;
+    overflow:hidden;
+    color:var(--heading);
+}
+
+.price{
+    color:#2563eb;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.category{
+    color:var(--text);
+    margin-bottom:20px;
+}
+
+/* Buttons */
+
+.details-btn,
+.cart-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.details-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.details-btn:hover{
+    background:#1d4ed8;
+}
+
+.cart-btn{
+    background:#1e293b;
+    color:white;
+}
+
+.cart-btn:hover{
+    background:#000;
+}
+
+/* Wishlist */
+
+.wishlist-icon{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:var(--card);
+
+    color:#ec4899;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    font-size:18px;
+}
+
+.wishlist-icon:hover{
+    background:#ec4899;
+    color:white;
+    transform:scale(1.1);
+}
+
+/* Image Gallery */
+
+.image-gallery{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main-image{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    transition:.3s;
+}
+
+.main-image:hover{
+    transform:scale(1.05);
+}
+
+.thumbnail-container{
+    display:flex;
+    gap:8px;
+    margin-top:15px;
+}
+
+.thumbnail-container img{
+    width:45px;
+    height:45px;
+
+    object-fit:contain;
+
+    padding:5px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    background:var(--card);
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.thumbnail-container img:hover{
+    transform:scale(1.1);
+}
+
+.active-thumb{
+    border:2px solid #2563eb;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .product-card{
+    background:var(--card);
+    color:var(--text);
+    border:1px solid var(--border);
+}
+
+body.dark .product-card h3{
+    color:var(--heading);
+}
+
+body.dark .wishlist-icon{
+    background:#374151;
+    color:#ff6ba8;
+}
+
+body.dark .wishlist-icon:hover{
+    background:#ec4899;
+    color:white;
+}
+
+body.dark .thumbnail-container img{
+    background:#374151;
+    border-color:#4b5563;
+}
