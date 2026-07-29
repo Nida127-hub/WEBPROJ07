@@ -18,27 +18,51 @@ function App() {
 
   return (
 
-    <>
+    <div className="app-container">
+
 
       <Navbar />
 
 
+
       <main className="main-content">
+
 
         <Routes>
 
-          <Route path="/" element={<Home />} />
 
-          <Route path="/products" element={<Products />} />
+          <Route 
+            path="/" 
+            element={<Home />} 
+          />
+
+
+          <Route 
+            path="/products" 
+            element={<Products />} 
+          />
+
+
 
           <Route 
             path="/product/:id" 
             element={<ProductDetails />} 
           />
 
-          <Route path="/cart" element={<Cart />} />
 
-          <Route path="/wishlist" element={<Wishlist />} />
+
+          <Route 
+            path="/cart" 
+            element={<Cart />} 
+          />
+
+
+
+          <Route 
+            path="/wishlist" 
+            element={<Wishlist />} 
+          />
+
 
 
           <Route 
@@ -46,10 +70,13 @@ function App() {
             element={<Login />} 
           />
 
+
+
           <Route 
             path="/register" 
             element={<Register />} 
           />
+
 
 
           <Route 
@@ -57,15 +84,18 @@ function App() {
             element={<NotFound />} 
           />
 
+
         </Routes>
 
+
       </main>
+
 
 
       <Footer />
 
 
-    </>
+    </div>
 
   );
 
